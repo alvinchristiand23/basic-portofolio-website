@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a onclick="handleHome()" href="#">Home</a></li>
+					<li><a onclick="handleAbout()" href="#">About</a></li>
+					<li><a onclick="handleTechnology()" href="#">Project</a></li>
+				</ul>
+			</nav>
+            <h1>AC</h1>
+		</header>
+		<main>
+			<div class="content">
+				<article class="home">
+					<h1>Welcome</h1>
+				</article hidden>
+				<article class="about">
+					<h3>About</h3>
+					<p>
+						An Informatics Engineering student at Tadulako
+						University. Interested in programming,
+						especially web dan mobile development and
+						focusing on front-end. Looking for internship
+						experience.
+					</p>
+				</article>
+				<article class="tech">
+					<h3>Technology Used</h3>
+					<div class="card-wrapper">
+						<div class="card">
+							<img
+								src="./assets/icons8-html-5-96.png"
+								alt=""
+							/>
+							<p>HTML</p>
+						</div>
+						<div class="card">
+							<img
+								src="./assets/icons8-css-filetype-96.png"
+								alt=""
+							/>
+							<p>CSS</p>
+						</div>
+						<div class="card">
+							<img
+								src="./assets/icons8-javascript-96.png"
+								alt=""
+							/>
+							<p>Javascript</p>
+						</div>
+					</div>
+				</article>
+			</div>
+			<aside>
+				<img src="./assets/MyPhoto.png" alt="" />
+                <div class="bio-wrapper">
+                    <h2>Alvin Christian D T</h2>
+                    <div >
+                        <a href="https://github.com/alvinchristian" target="_blank"
+                            ><img
+                                class="social"
+                                src="./assets//GitHub-Mark-120px-plus.png"
+                                alt=""
+                        /></a>
+                        <a
+                            href="https://www.linkedin.com/in/alvinchristian/"
+                            target="_blank"
+                            ><img
+                                class="social"
+                                src="./assets/LI-In-Bug.png"
+                                alt=""
+                        /></a>
+                    </div>
+                </div>
+			</aside>
+		</main>
+		<footer>
+			<p>&copy; Copyright 2022 - Created by Alvin Christian</p>
+		</footer>
+	</body>
+</html>
+
+<script src="index.js"></script>

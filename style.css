@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	list-style: none;
+	color: #575e8c;
+}
+
+html {
+	padding: 0 5vw;
+	background: linear-gradient(
+		135deg,
+		rgba(255, 249, 233, 1) 0%,
+		rgba(255, 239, 222, 1) 15%,
+		rgba(254, 235, 255, 1) 30%,
+		rgba(239, 240, 255, 1) 45%,
+		rgba(223, 244, 255, 1) 85%,
+		rgba(237, 255, 252, 1) 100%
+	);
+}
+
+/* ------------ Header ------------ */
+header {
+	background-color: rgba(256, 256, 256, 0.2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 8vh;
+	border-radius: 1rem;
+}
+
+header:hover {
+	background-color: rgba(256, 256, 256, 0.4);
+}
+
+nav {
+	flex-basis: 60%;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li a {
+	margin-left: 2vw;
+	padding: 0.5rem 1.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 0.5rem;
+}
+
+nav ul li a:hover {
+	background-color: rgba(256, 256, 256, 1);
+}
+
+header h1 {
+	display: flex;
+	flex-basis: 40%;
+	justify-content: center;
+	margin-left: 1vw;
+}
+
+/* ---------- Main ---------- */
+main {
+	display: flex;
+	margin: 1vh 0;
+	align-items: center;
+}
+
+.content {
+	background-color: rgba(256, 256, 256, 0.2);
+	display: flex;
+	height: 82vh;
+	flex-basis: 60%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1vh;
+	padding: 2vh 4vw;
+	border-radius: 1rem;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+article h3 {
+	margin-bottom: 3vh;
+}
+
+.about,
+.tech {
+	display: none;
+}
+
+article p {
+	font-size: 0.8rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+.card-wrapper {
+	width: 40vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.card {
+	background-color: rgba(256, 256, 256, 0.2);
+	width: 8vw;
+	height: 8vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5rem;
+}
+.card:hover {
+	background-color: rgba(256, 256, 256, 0.6);
+}
+
+.card img {
+	width: 4vw;
+}
+
+.card p {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+aside {
+	background-color: rgba(256, 256, 256, 0.2);
+	height: fit-content;
+	display: flex;
+	flex-basis: 40%;
+	flex-direction: column;
+	align-items: center;
+	padding: 5vw;
+	border-radius: 1rem;
+}
+
+aside img {
+	width: 16vw;
+}
+
+aside h2 {
+	margin: 2vh 0;
+}
+
+.bio-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+aside div div img {
+	width: 2vw;
+	margin: 0 1vw;
+	opacity: 0.4;
+}
+
+aside div div img:hover {
+	opacity: 1;
+}
+
+/* ---------- Footer ---------- */
+footer {
+	background-color: rgba(256, 256, 256, 0.2);
+	height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+}
+
+footer p {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+@media only screen and (max-width: 768px) {
+	header {
+		flex-direction: column-reverse;
+		height: fit-content;
+		padding: 2vh 0;
+	}
+
+	nav {
+		margin: 2vh;
+	}
+
+	main {
+		flex-direction: column;
+	}
+
+	.content {
+		width: 90vw;
+		flex-basis: unset;
+		height: 40vh;
+		margin-bottom: 1vh;
+	}
+
+	.card-wrapper {
+		width: 80vw;
+	}
+
+	.card {
+		width: 20vw;
+		height: 20vw;
+	}
+
+	.card img {
+		width: 10vw;
+	}
+
+	aside {
+		width: 90vw;
+		height: 33vh;
+		flex-basis: unset;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	aside img {
+		width: 20vw;
+	}
+
+	.bio-wrapper h2 {
+		font-size: 1rem;
+	}
+
+	aside div div img {
+		width: 5vw;
+		margin: 0 1vw;
+		opacity: 0.4;
+	}
+}
